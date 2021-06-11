@@ -7,7 +7,6 @@
   font-size: 15px;
 }
 body {
-  height: 100vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -79,9 +78,10 @@ body {
   border-top: 4px solid hsl(212, 86%, 64%);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 780px) {
   .container {
-    max-width: 80%;
+    width: 80vw;
+    max-width: 950px;
     margin: 2rem auto;
     grid-template-columns: repeat(12, minmax(min-content, 10rem));
     grid-template-rows: minmax(min-content,150px) repeat(10, 3rem);
