@@ -84,13 +84,28 @@ body {
     max-width: 80%;
     margin: 2rem auto;
     grid-template-columns: repeat(12, minmax(min-content, 10rem));
-    grid-template-rows: 200px repeat(10, 3rem);
+    grid-template-rows: minmax(min-content,150px) repeat(10, 3rem);
     row-gap: 1rem;
   }
   .info {
     grid-column: 4 / span 6;
     grid-row: 1 / span 1;
+    
   }
+
+  .main-heading {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  .main-heading--highlight {
+    font-size: 2.5rem;
+  }
+  .main-subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+  }
+
   .card-1 {
     grid-column: 1 / span 4;
     grid-row: 4 / span 5;
@@ -103,7 +118,6 @@ body {
     grid-column: 5 / span 4;
     grid-row: 7 / span 5;
   }
-
   .card-4 {
     grid-column: 9 / span 4;
     grid-row: 4 / span 5;
